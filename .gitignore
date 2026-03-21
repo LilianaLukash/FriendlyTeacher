@@ -30,8 +30,15 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+# local env files — НЕ коммитить ключи
+.env
+.env.*
+!.env.example
+!server/.env.example
+server/.env
+
+# рантайм сервера (использованные промо-нонсы) — не в репозиторий
+server/promo_redemptions.jsonl
 
 # typescript
 *.tsbuildinfo
