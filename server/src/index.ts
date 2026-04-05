@@ -843,6 +843,6 @@ app.post('/tts', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Friendly Sam API on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Friendly Sam API on port ${PORT}`);
 });
